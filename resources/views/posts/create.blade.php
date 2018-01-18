@@ -13,6 +13,9 @@
             {{ Form::text('title', null, array('class' => 'form-control')) }}
             {{ Form::label('body', 'Post Body:') }}
             {{ Form::textarea('body', null, array('class' => 'form-control')) }}
+            {{ Form::label('topic', 'Topic: ') }}
+            {{ Form::select('Topic  ', array('topic1' => '23 nisan', 'topic2' => '19 mayıs')) }}
+
             {{ Form::submit('Create Post', array('class' => 'btn btn-success btn-lg btn-block', 'style' => 'margin-top: 20px;')) }}
         {!! Form::close() !!}
 
